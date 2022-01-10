@@ -1,10 +1,11 @@
 public class Customer {
     private int id;
-    private String companyName, companySize;
+    private String companyName;
+    private CompanySize companySize;
     private int nrEmployees, income;
     private String location;
 
-    public Customer(int id, String companyName, String companySize, int nrEmployees, int income, String location) {
+    public Customer(int id, String companyName, CompanySize companySize, int nrEmployees, int income, String location) {
         this.id = id;
         this.companyName = companyName;
         this.companySize = companySize;
@@ -21,7 +22,7 @@ public class Customer {
         return companyName;
     }
 
-    public String getCompanySize() {
+    public CompanySize getCompanySize() {
         return companySize;
     }
 

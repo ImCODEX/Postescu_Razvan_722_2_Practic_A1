@@ -18,7 +18,7 @@ public class Repo {
         List<Customer> customerList = new ArrayList<>();
         while (line != null) {
             attributes = line.split(",");
-            customer = new Customer(Integer.parseInt(attributes[0]), attributes[1], attributes[2], Integer.parseInt(attributes[3]), Integer.parseInt(attributes[4]), attributes[5]);
+            customer = new Customer(Integer.parseInt(attributes[0]), attributes[1], CompanySize.valueOf(attributes[2]), Integer.parseInt(attributes[3]), Integer.parseInt(attributes[4]), attributes[5]);
             customerList.add(customer);
             line = bufferedReader.readLine();
         }
